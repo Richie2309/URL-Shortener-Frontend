@@ -3,7 +3,7 @@ import { useAuth } from "../context/AuthContext";
 
 const Navbar = () => {
 
-  const { isAuthenticated, userName, logout } = useAuth(); 
+  const { isAuthenticated, username, logout } = useAuth(); 
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center justify-end gap-3">
             {isAuthenticated ? (
               <>
-                <span className="text-sm font-semibold text-gray-700">Welcome, {userName}</span>
+                <span className="text-sm font-semibold text-gray-700">Welcome, {username}</span>
                 <button
                   onClick={handleLogout}
                   className="inline-flex items-center justify-center rounded-xl bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"

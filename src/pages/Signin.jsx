@@ -34,7 +34,7 @@ export default function Signin() {
     }
 
     try {
-      const response = await API.post('/auth/signin', formData);
+      const response = await API.post('/auth/signin', formData);      
       if (response.data) {
         login({
           token: response.data.token,

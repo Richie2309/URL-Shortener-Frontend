@@ -62,14 +62,14 @@ const Home = () => {
       {shortenedUrl && (
         <div className="mt-4">
           <h2 className="text-lg font-bold">Shortened URL:</h2>
-          {/* <a
+          <a
             href={shortenedUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500"
-          > */}
+          >
             {shortenedUrl}
-          {/* </a> */}
+          </a>
         </div>
       )}
     </div>
